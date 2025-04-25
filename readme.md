@@ -9,8 +9,11 @@ Aqui você encontrará algoritmos, experimentos e implementações desenvolvidos
 ## 🛠️ **Funcionalidades Implementadas**  
 
 ✅ **Extração das componentes RGB,CYK,HSV** – Funções que implementam a extração e conversão das componentes RGB, CYK e HSV
+
 ✅ **Quantização de Imagem** – Implementação de algoritmos de redução de níveis de cor de uma imagem (Popularidade e corte pela mediana)
+
 ✅ **Equalização de um histograma** – Algoritmo que distribui de maneira igualitaria os niveis de cinza de uma imagem
+
 ✅ **Aplicação de ruido e filtragem** – Algoritmo que insere ruido em uma imagem (Sal e pimenta) e após isso a recupera utilziando o filtro 3x3 da mediana
 
 *(E mais vem por aí!)* 🚀  
