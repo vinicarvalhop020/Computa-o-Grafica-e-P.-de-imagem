@@ -8,10 +8,10 @@ Aqui você encontrará algoritmos, experimentos e implementações desenvolvidos
 
 ## 🛠️ **Funcionalidades Implementadas**  
 
-✅ **Quantização de Imagem** – Redução de níveis de cor para compactação ou efeitos artísticos  
-✅ **Equalização de Histograma** – Melhoria de contraste em imagens  
-✅ **Extração de Canais de Cor** – CMY, RGB e HSV  
-✅ **Conversão entre Espaços de Cor** – Transformações entre RGB, HSV e outros modelos  
+✅ **Extração das componentes RGB,CYK,HSV** – Funções que implementam a extração e conversão das componentes RGB, CYK e HSV
+✅ **Quantização de Imagem** – Implementação de algoritmos de redução de níveis de cor de uma imagem (Popularidade e corte pela mediana)
+✅ **Equalização de um histograma** – Algoritmo que distribui de maneira igualitaria os niveis de cinza de uma imagem
+✅ **Aplicação de ruido e filtragem** – Algoritmo que insere ruido em uma imagem (Sal e pimenta) e após isso a recupera utilziando o filtro 3x3 da mediana
 
 *(E mais vem por aí!)* 🚀  
 
@@ -23,4 +23,5 @@ Aqui você encontrará algoritmos, experimentos e implementações desenvolvidos
 - Bibliotecas:  
   ![stb_image_write](https://github.com/nothings/stb/blob/master/stb_image_write.h)  
   ![stb_image](https://github.com/nothings/stb/blob/master/stb_image.h)  
+
 
