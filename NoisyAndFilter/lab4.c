@@ -25,8 +25,6 @@ void insertionsort(unsigned char *v, int n) {
     }
 }
 
-
-
 void ruido_sal_pimenta(unsigned char *img_noisy,unsigned char *img, int width, int height , float probabilidade){
 
     for(int row = 0; row < height; row++){
@@ -70,7 +68,7 @@ void filtro_mediana(unsigned char *img_filtred, unsigned char *img, int width, i
             vetor[7] = img[index + width];
             vetor[8] = img[index + width + 1];
 
-            insertionsort(vetor, 9);
+            insertionsort(vetor, 9); //ordena o vetor
             img_filtred[index] = vetor[4]; // mediana
         }
     }
@@ -119,4 +117,18 @@ int main(){
     save_image("filtred_pepper.png", img_filtred_pepper, width_p, height_p, 1);
     save_image("filtred_fruit.png", img_filtred_fruit, width_f, height_f, 1);
     save_image("filtred_baboon.png", img_filtred_baboon, width_b, height_b, 1);
+
+    
+    //free memory
+    stbi_image_free(img_pepper);
+    stbi_image_free(img_fruit);
+    stbi_image_free(img_baboon);
+    free(img_pepper_sal_pimenta);
+    free(img_fruit_sal_pimenta);
+    free(img_baboon_sal_pimenta);
+    free(img_filtred_pepper);
+    free(img_filtred_fruit);
+    free(img_filtred_baboon);
+
+    return 0;
 }
